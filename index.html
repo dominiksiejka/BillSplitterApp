@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zadanie 2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="header">
+        <h2>BillSplitter</h2>
+        <p>Share your bill with friends</p>
+      </div>
+      <section class="calculation">
+        <label for="total"
+          >Total bill amount:
+          <input id="total" type="number" placeholder="total amount..." />
+        </label>
+        <label for="people"
+          >Split between:
+          <input id="people" type="number" placeholder="number of people..." />
+        </label>
+        <label for="tip"
+          >Tip rate you want to give:
+          <select name="tips" id="tip" required>
+            <option value="" selected disabled>Pick the rate</option>
+            <option value="0.2">20%</option>
+            <option value="0.05">5%</option>
+            <option value="0.08">8%</option>
+            <option value="0.1">10%</option>
+            <option value="0.013">13%</option>
+          </select>
+        </label>
+        <button type="submit">Calculate</button>
+      </section>
+    </div>
+    <div class="boxMessage">
+      <p>Each of you needs to pay <span id="result"> </span></p>
+    </div>
+
+    <script src="project.js"></script>
+  </body>
+</html>
